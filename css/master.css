@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+@font-face {
+    font-family: lato;
+    src: url(../font/Lato-Regular.ttf);
+  }
+
+  
+  @layer base {
+    /* width */
+    ::-webkit-scrollbar {
+      @apply w-1
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      @apply bg-inherit
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      @apply bg-[#6D6D6D] dark:bg-[#6D6D6D] rounded-md
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      @apply bg-[#6D6D6D]
+    }
+  }
